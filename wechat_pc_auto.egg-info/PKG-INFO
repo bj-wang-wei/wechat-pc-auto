@@ -1,3 +1,24 @@
+Metadata-Version: 2.4
+Name: wechat-pc-auto
+Version: 1.0.0
+Summary: A stable WeChat PC automation tool for sending messages and files
+Author-email: vin <bj0_0@hotmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/bj-wang-wei/wechat-pc-auto
+Project-URL: Repository, https://github.com/bj-wang-wei/wechat-pc-auto
+Project-URL: Issues, https://github.com/bj-wang-wei/wechat-pc-auto/issues
+Keywords: wechat,automation,uiautomation,windows,messaging
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: uiautomation>=2.0.18
+Requires-Dist: pyperclip>=1.8.2
+Dynamic: license-file
+
 # wechat-pc-auto
 
 [![PyPI version](https://badge.fury.io/py/wechat-pc-auto.svg)](https://badge.fury.io/py/wechat-pc-auto)

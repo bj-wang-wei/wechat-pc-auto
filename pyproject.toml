@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wechat-pc-auto"
+version = "1.0.0"
+description = "A stable WeChat PC automation tool for sending messages and files"
+readme = "README.md"
+authors = [{name = "vin", email = "bj0_0@hotmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["wechat", "automation", "uiautomation", "windows", "messaging"]
+requires-python = ">=3.8"
+dependencies = [
+    "uiautomation>=2.0.18",
+    "pyperclip>=1.8.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/bj-wang-wei/wechat-pc-auto"
+Repository = "https://github.com/bj-wang-wei/wechat-pc-auto"
+Issues = "https://github.com/bj-wang-wei/wechat-pc-auto/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["wechat_auto*"]
