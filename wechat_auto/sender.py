@@ -1,4 +1,4 @@
-# wx_auto/sender.py  
+# wx_auto/sender.py
 
 import pyperclip
 import time
@@ -17,7 +17,8 @@ def send_message(window, msg: str):
     window.SendKeys("{Enter}")
 
     pyperclip.copy("")  # 清理
-    log(f"文本消息已发送：{msg.replace(chr(10), '\\n')}")
+    display_msg = msg.replace("\n", "\\n")
+    log(f"文本消息已发送：{display_msg}")
 
 
 def send_files(window, file_paths: list[str]):

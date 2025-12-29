@@ -5,6 +5,7 @@ wechat_auto/__init__.py
 wechat_auto/chat.py
 wechat_auto/clipboard.py
 wechat_auto/core.py
+wechat_auto/listener.py
 wechat_auto/logger.py
 wechat_auto/sender.py
 wechat_auto/utils.py
