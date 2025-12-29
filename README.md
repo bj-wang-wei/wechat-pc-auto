@@ -58,11 +58,14 @@ wx.send_files([
 
 ```
 wechat_auto/
+├── __init__.py  
 ├── core.py         # 主入口
 ├── window.py       # 窗口管理
 ├── chat.py         # 智能打开聊天
 ├── sender.py       # 发送消息和文件
 ├── clipboard.py    # 系统级文件复制
+├── listener.py     # 监听消息
+├── utils.py        # 通用功能
 └── logger.py       # 日志
 ```
 
