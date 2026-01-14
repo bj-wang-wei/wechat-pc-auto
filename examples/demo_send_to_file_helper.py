@@ -13,13 +13,13 @@ if __name__ == "__main__":
     target = "文件传输助手"
 
     # 发送文本消息
-    message = """你好！这是 wechat-pc-auto v1.0.0 测试
+    message = """你好！这是 wechat-pc-auto v1.1.0 测试
 多行消息支持正常
 自动化发送成功！
 时间：2025-12-19"""
 
     print(f"正在发送消息给：{target}")
-    wx.send_msg(message, who=target)
+    # wx.send_msg(message, who=target)
 
     # 发送文件（请修改为你的真实文件路径）
     files = [

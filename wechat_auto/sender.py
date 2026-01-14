@@ -22,6 +22,7 @@ def send_message(window, msg: str):
 
 
 def send_files(window, file_paths: list[str]):
+
     """发送文件（使用真正的文件剪贴板复制）"""
     window.SwitchToThisWindow()
     time.sleep(0.8)
