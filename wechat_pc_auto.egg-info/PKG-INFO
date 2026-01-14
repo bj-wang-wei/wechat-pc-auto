@@ -47,8 +47,8 @@ wx.load_wechat()  # 自动激活微信
 # 发送消息 + 文件到文件传输助手
 wx.send_msg("自动化测试成功！\n多行消息正常显示", who="文件传输助手")
 wx.send_files([
-    "C:/test.pdf",
-    "C:/test.jpg"
+    "C:/report.pdf",
+    "C:/screenshot.jpg"
 ], who="文件传输助手")
 ```
 查看完整示例：examples/demo_send_to_file_helper.py
@@ -68,7 +68,7 @@ wx.send_files([
 - 真正的文件剪贴板复制（非路径文本）
 - 模块化设计，易于扩展（如后续可加接收消息、自动回复等）
 
-## 新特性（v1.1.0）
+## 新特性（v1.1.1）
 - 支持实时监听新消息
 - 自动识别未读红点并点击
 - 智能判断消息是否为别人发的

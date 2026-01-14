@@ -19,7 +19,7 @@ if __name__ == "__main__":
 时间：2025-12-19"""
 
     print(f"正在发送消息给：{target}")
-    # wx.send_msg(message, who=target)
+    wx.send_msg(message, who=target)
 
     # 发送文件（请修改为你的真实文件路径）
     files = [
