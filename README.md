@@ -48,11 +48,15 @@ wx.send_files([
 - 真正的文件剪贴板复制（非路径文本）
 - 模块化设计，易于扩展（如后续可加接收消息、自动回复等）
 
-## 新特性（v1.1.1）
+## 新特性（v1.1.0）
 - 支持实时监听新消息
 - 自动识别未读红点并点击
 - 智能判断消息是否为别人发的
 - 支持自定义自动回复逻辑
+
+## v1.1.2 修复bugs
+- “复制文件到剪贴板异常：argument 1: OverflowError: int too long to convert” bug
+- 当微信窗口在最上层时，不再发送 Ctrl+Alt+W 激活微信窗口
 
 ## 项目结构
 
@@ -65,7 +69,6 @@ wechat_auto/
 ├── sender.py       # 发送消息和文件
 ├── clipboard.py    # 系统级文件复制
 ├── listener.py     # 监听消息
-├── utils.py        # 通用功能
 └── logger.py       # 日志
 ```
 

@@ -1,5 +1,6 @@
 # examples/demo_send_to_file_helper.py
 from wechat_auto import WxAuto
+import time
 
 if __name__ == "__main__":
     print("=== 微信PC版自动化工具 - 测试发送到【文件传输助手】===\n")
@@ -13,10 +14,10 @@ if __name__ == "__main__":
     target = "文件传输助手"
 
     # 发送文本消息
-    message = """你好！这是 wechat-pc-auto v1.1.0 测试
+    message = f"""你好！这是 wechat-pc-auto v1.1.2 测试
 多行消息支持正常
 自动化发送成功！
-时间：2025-12-19"""
+时间：{time.strftime("%Y-%m-%d")}"""
 
     print(f"正在发送消息给：{target}")
     wx.send_msg(message, who=target)
@@ -25,7 +26,6 @@ if __name__ == "__main__":
     files = [
         r"E:\test.png",
         r"E:\test.xlsx",
-        # r"D:\Videos\demo.mp4",
     ]
 
     print(f"正在发送 {len(files)} 个文件...")
